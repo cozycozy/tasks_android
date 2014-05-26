@@ -133,7 +133,7 @@ public class MainFragment extends Fragment {
 	private String buildUserInfoDisplay(GraphUser user){
 		Log.i(TAG,"buildUserInfoDisplay...desu");
 		StringBuffer userInfo = new StringBuffer();
-		
+		userInfo.append("ID: " + user.getId());
 		userInfo.append(String.format("Name: %S\n\n", user.getName()));
 		userInfo.append(String.format("Birthday: %S\n\n", user.getBirthday()));
 		userInfo.append(String.format("Location: %s\n\n", 
